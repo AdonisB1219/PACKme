@@ -15,17 +15,20 @@
   }
 
   .main-color{
-    background: linear-gradient(rgb(186, 210, 248), pink, white, pink, rgb(186, 210, 248))
+    background: linear-gradient(rgb(186, 210, 248), pink, white, pink, rgb(186, 210, 248));
+    display: flex;
+    justify-content: center;
   }
 
 
   .navbar{
-    background-color: pink;
+    background-color: rgb(255, 226, 231);
   }
 
   li:hover{
     background-color: rgb(184, 184, 255);
     padding: 5px 10p;
+    border-radius: 5px;
   }
 
   p{
@@ -35,3 +38,47 @@
   .blue{
     background-color: rgb(186, 210, 248);
   }
+
+  .acordeon{
+    background-color: rgb(186, 210, 248);
+}
+
+.palabras{
+  display: flex;
+  width: 700px;
+  height: 60px;
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 30px;
+  overflow: hidden;
+  color: rgb(243, 2, 159);
+  margin-right: 80px;
+}
+
+.palabras > ul{
+  list-style: none;
+  padding-left: 10px;
+  animation: cambiar 11s infinite;
+}
+
+.palabras > *{
+  margin: 0;
+  margin-right: 10px;
+}
+
+@keyframes cambiar {
+  0%{ margin-top: 0;}
+  10%{ margin-top: 0;}
+  15%{ margin-top: -80px;}
+  25%{margin-top: -80px;}
+  30%{ margin-top: -150px;}
+  40%{ margin-top: -150px;}
+  45%{ margin-top: -225px;}
+  55%{ margin-top: -225px;}
+  60%{ margin-top: -150px;}
+  70%{ margin-top: -150px;}
+  75%{ margin-top: -80px;}
+  85%{ margin-top: -80px;}
+  90%{ margin-top: 0px;}
+  100%{ margin-top: 0px;}
+}
